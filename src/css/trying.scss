@@ -1,0 +1,169 @@
+$behance: #0057ff;
+
+
+
+$white: #fff;
+$white_25: #f7f5f5;
+$whitish : #e8e8e8;
+$orange : #f37d3a;
+
+$yellow : #ffb33a;
+$black : #262626;
+$gray: #4f4f4f;
+
+$green: #3af361;
+$grey : #7c7c7c;
+
+html {
+    height: 100%;
+}
+
+
+.source {
+    background-color: $behance;
+    color: $orange;
+    font-weight: 700;
+    text-decoration: none;
+    position: absolute;
+    padding: 10px;
+    top: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.container {
+    @media(max-width: 1000px) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 780px) {
+        width: 300px;
+    }
+
+    .card_left {
+        flex: 1 1 50%;
+        padding: 60px;
+        position: relative;
+
+        .fa {
+            font-size: 1.5rem;
+            color: $whitish;
+            position: absolute;
+            top: 25px;
+        }
+
+        .fa:hover {
+            color: $orange;
+        }
+
+        .left {
+            left: 20px;
+        }
+
+        .right {
+            right: 20px;
+        }
+
+        img {
+            width: 27rem;
+            max-width: 27rem;
+            height: 22rem;
+            max-height: 22rem;
+            border-radius: 10%;
+
+            @media(max-width: 1000px) {
+                width: 90%;
+                max-width: 200px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .card_right {
+        flex: 1 1 50%;
+        padding: 20px;
+        overflow: hidden;
+        max-height: 100%;
+        background: $white_25;
+
+        span {
+            text-transform: uppercase;
+            color: $orange;
+            letter-spacing: 1.2px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-weight: 500;
+            color: $black;
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $gray;
+            font-weight: 300;
+            height: 50px;
+            max-height: 50px;
+            position: relative;
+        }
+
+        .rating{
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        
+
+        .card_footer {
+            display: flex;
+            align-items: center;
+        
+            .btn {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $white;
+                background: linear-gradient(90deg,
+                        rgb(255, 255, 255) 0%,
+                        rgb(255, 200, 0) 100%);
+                font-size: .7rem;
+                padding: 10px 30px;
+                border-radius: 30px;
+                letter-spacing: 1.2px;
+                margin-left: 50px;
+                margin-top: 10%;
+                position: static;
+            }
+
+            .btn:hover {
+                color: $orange;
+                background: $white;
+            }
+        }
+    }
+}
+
+
+
+.star{
+    cursor: pointer;
+}
+
+.comment{
+    top: 50px;
+    border-radius: 50px;
+    border-color: orange;
+    color: orange;
+    width: 100vh;
+    border-style: inset;
+    margin-bottom: 10px;
+}

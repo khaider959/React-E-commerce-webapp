@@ -1,0 +1,184 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    border-radius: 20%;
+}
+
+.popup-inner .close--btn {
+    position: relative;
+    padding-top: 10%;
+    border: none;
+    background-color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+.credit-card-picture{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.wrapper {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px
+}
+
+.outer-card {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+}
+
+.wrapper .card::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #3641d3;
+    right: -30px;
+    top: -30px;
+    border-radius: 50%;
+    opacity: 0.7
+}
+
+.wrapper .card::before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: #3641d3;
+    left: -70px;
+    top: -70px;
+    border-radius: 50%;
+    opacity: 0.4
+}
+
+.wrapper .forms {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.wrapper .forms input {
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    text-indent: 10px;
+    margin-top: 4px
+}
+
+.wrapper .forms input:focus {
+    outline: none
+}
+
+.input-items span {
+    font-size: 14px;
+    margin-left: 2px
+}
+
+.input-items {
+    margin-bottom: 10px
+}
+
+.one-line {
+    display: flex;
+    flex-direction: row
+}
+
+.one-line .input-items:nth-child(1) {
+    margin-right: 10px
+}
+
+.input-buttons {
+    width: 100%;
+    margin-top: 10px
+}
+
+.input-buttons a {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: orange;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.input-buttons a:active{
+    background-color: red;
+}
+
+
+.overlay:target .popup{
+    animation: popup 0.7s;
+  }
+  
+  @keyframes popup {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.4);
+    }
+    60%{
+      transform: scale(1.1);
+    }
+    70%{
+      transform: scale(1.2);
+    }
+    80%{
+      transform: scale(1);
+    }
+    90%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }

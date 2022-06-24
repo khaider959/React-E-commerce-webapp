@@ -1,0 +1,61 @@
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 100%;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: 65%;
+  max-height: 65%;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 35px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+
+.log-in-before-commenting {
+  font-size: 7rem;
+  text-align: center;
+  height: 60vh;
+  color: #fcedd8;
+  position: relative;
+  background: orange;
+  font-family: 'Niconne', cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #eb452b,
+    10px 10px 0px #efa032,
+    15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f,
+    25px 25px 0px #052939,
+    30px 30px 0px #c11a2b,
+    35px 35px 0px transparent,
+    40px 40px 0px transparent,
+    45px 45px 0px transparent;
+}

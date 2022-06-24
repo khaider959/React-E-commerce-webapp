@@ -1,0 +1,46 @@
+body{
+    background-image:  url('../images/foodiesfeed.com_red-fruit-and-vegetables-on-a-white-background.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-attachment:fixed;  
+}
+    
+
+.main-container{ 
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+.animation{
+    position: relative;
+    font-size: 150%;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 0.1vw #32e647;
+    text-transform: uppercase;
+}
+
+.animation::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    -webkit-text-stroke: 0vw #32e647;
+    border-right: 2px solid #32e647 ;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    40%,90%{
+        width: 100%;
+    }
+}
